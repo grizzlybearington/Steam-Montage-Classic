@@ -1,0 +1,14 @@
+.root {
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+}
+
+.text-area {
+	-fx-text-fill: white;
+	-fx-background-insets: 0, 0, 1, 2;
+}
+
+.text-area .content {
+	-fx-background-color: black;
+	-fx-cursor: default;
+}

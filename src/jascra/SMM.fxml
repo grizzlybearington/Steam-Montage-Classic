@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jascra.SMMController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="254.0" layoutX="175.0">
+               <image>
+                  <Image url="@images/smlogo.png" />
+               </image>
+            </ImageView>
+            <Line endX="250.0" layoutX="300.0" layoutY="77.0" startX="-250.0" stroke="WHITE" strokeWidth="2.0" />
+            <Label layoutX="153.0" layoutY="100.0" text="ID Type" textFill="WHITE" />
+            <ChoiceBox fx:id="chooseIDType" layoutX="108.0" layoutY="117.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label layoutX="167.0" layoutY="164.0" text="ID" textFill="WHITE" />
+            <TextField fx:id="insertID" layoutX="108.0" layoutY="181.0" prefHeight="27.0" prefWidth="130.0" />
+            <Label layoutX="134.0" layoutY="226.0" text="Width (in tiles)" textFill="WHITE" />
+            <TextField fx:id="userWidth" layoutX="153.0" layoutY="243.0" prefHeight="27.0" prefWidth="40.0" />
+            <Button fx:id="goButton" layoutX="140.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#goButtonPress" text="Montage" />
+            <Line endX="153.0" layoutX="294.0" layoutY="225.0" rotate="90.0" startX="-140.0" stroke="WHITE" strokeWidth="2.0" />
+            <TextArea fx:id="logText" editable="false" layoutX="316.0" layoutY="93.0" prefHeight="263.0" prefWidth="227.0" wrapText="true">
+               <font>
+                  <Font size="10.0" />
+               </font></TextArea>
+            <Line endX="250.0" layoutX="300.0" layoutY="372.0" startX="-250.0" stroke="WHITE" strokeWidth="2.0" />
+            <Pane layoutX="394.0" layoutY="372.0">
+               <children>
+                  <Hyperlink fx:id="githubLink" layoutX="103.0" onMouseClicked="#visitGit" text="Jason Craigg">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fitHeight="27.0" fitWidth="23.0" layoutX="59.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/heartwhite.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="21.25" strokeType="OUTSIDE" strokeWidth="0.0" text="with        by ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="109.0" layoutY="11.25" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <ImageView fitHeight="27.0" fitWidth="23.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/codewhite.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
