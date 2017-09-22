@@ -12,7 +12,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("SMM.fxml"));
-			Scene scene = new Scene(root,600,400);
+			Scene scene = new Scene(root,502,297);
 			scene.getStylesheets().add(getClass().getResource("SMM.css").toExternalForm());
 			primaryStage.getIcons().add(new Image(getClass().getResource("images/smlogo-icon.png").toExternalForm()));
 			primaryStage.setScene(scene);

@@ -175,13 +175,14 @@ public class SMMController {
             }
         }
         try {
-            ImageIO.write(bufferedImage, "png", new File(new SimpleDateFormat("'montage 'yyyy-MM-dd hh-mm-ss'.png'").format(new Date())));
+        	File file = new File(new SimpleDateFormat("'montage 'yyyy-MM-dd hh-mm-ss'.png'").format(new Date()));
+            ImageIO.write(bufferedImage, "png", file);
+            logText.appendText("Done!: " + file.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
             enableAllUI();
 			return;
         }
-        logText.appendText("- Done!");
         enableAllUI();
 	}
 	
@@ -202,7 +203,7 @@ public class SMMController {
 	@FXML
 	public void visitGit(MouseEvent event) {
 		try {
-	        Desktop.getDesktop().browse(new URI("http://www.github.com/"));
+	        Desktop.getDesktop().browse(new URI("https://github.com/strohmer/Steam-Montage"));
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
